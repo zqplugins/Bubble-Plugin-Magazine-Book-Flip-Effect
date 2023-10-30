@@ -1,0 +1,13 @@
+{
+    "caption": "Go to Page",
+    "fields": {
+        "AAR": {
+            "caption": "Page number",
+            "default_val": 2,
+            "editor": "DynamicValue",
+            "name": "page_number",
+            "rank": 0,
+            "value": "number"
+        }
+    }
+}

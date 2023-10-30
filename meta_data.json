@@ -1,0 +1,14 @@
+{
+    "categories": {
+        "0": "containers",
+        "1": "analytics",
+        "2": "media",
+        "3": "data (things)"
+    },
+    "demo_page": "https://magazineplugin.bubbleapps.io/version-test",
+    "description": "Use images from your database to create an interactive Magazine!\n\n* Currently not responsive!*\n\n*** Turn.js library ***\nGithub Repo: https://github.com/blasten/turn.js/#readme\n\nTo receive special offers and important updates please visit: https://zeroqo.de/updates\n\n🔔 Get our 15 Top Plugins Bundle with 15 most popular plugins for only 20$/month.\nPlugins included in the Bundle:\n\n- Bubble Page to PDF converter\n- Stripe Marketplace Express\n- Air Calendar (Full Calendar 5.9.0)\n- AWS File uploader - Any size\n- Advanced Rich Text Editor\n- Mapbox Map\n- Phone Input Number with Formatting\n- Advanced Multi Uploader\n- Video Player\n- Dynamic Height & Width of Elements\n- Audio Recorder\n- Repeating Group to CSV\n- Print Pro\n- Advanced Audio Player\n- Easy File Downloader\n\nGet it here: https://zeroqode.com/bundle\n\nNEED HELP BUILDING A CUSTOM APPLICATION?\nhttps://dev.zeroqode.com\n\nSUPERCHARGE YOUR APP WITH ZEROQODE PLUGINS\nhttps://zeroqode.com/plugins\n\nQUESTIONS OR NEED HELP?\nhttps://forum.zeroqode.com",
+    "image": "//s3.amazonaws.com/appforest_uf/f1642876424958x753544410936760400/book-page-flip.gif",
+    "license": "open_source",
+    "link": "https://zeroqode.com/plugins",
+    "name": "Magazine/Book Flip Effect"
+}

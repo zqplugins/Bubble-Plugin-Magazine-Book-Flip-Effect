@@ -1,0 +1,36 @@
+{
+    "assets": {
+        "AAD": {
+            "name": "turn.js",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1641765850222x334858287736811600/turn.js"
+        },
+        "AAE": {
+            "name": "turn.min",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1641765870246x518703125082096400/turn.html4.min.js"
+        },
+        "AAF": {
+            "name": "modernizr",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1641766151706x776115383095657700/modernizr.2.5.3.min.js"
+        },
+        "AAG": {
+            "name": "hash.js",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1641766236771x763341392349618600/hash.js"
+        },
+        "AAI": {
+            "name": "Zoom",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1642867634933x242301151429863650/zoom.min.js"
+        },
+        "AAJ": {
+            "name": "Magazine",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1642869812453x236868173651716400/magazine.js"
+        },
+        "AAT": {
+            "name": "Logo",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1642876967232x999923699292537600/Original%20plugins%20logo.png"
+        }
+    },
+    "dependencies": {
+        "plugin_api_version": 2,
+        "use_jquery": true
+    }
+}

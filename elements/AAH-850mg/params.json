@@ -1,0 +1,55 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 600,
+        "width": 900
+    },
+    "display": "Magazine / Book",
+    "fields": {
+        "AAK": {
+            "caption": "Data type",
+            "editor": "custom_type",
+            "name": "data",
+            "rank": 0
+        },
+        "AAL": {
+            "caption": "Data source",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "data_source",
+            "rank": 1,
+            "value": "custom_data_AAK"
+        },
+        "AAM": {
+            "caption": "Image",
+            "editor": "custom_field_AAK",
+            "field_type_restriction": "text_image_file",
+            "name": "image",
+            "rank": 2
+        },
+        "AAN": {
+            "caption": "ID",
+            "editor": "custom_field_AAK",
+            "field_type_restriction": "text_image_file",
+            "name": "id",
+            "rank": 3
+        }
+    },
+    "icon": "ion-ios-book",
+    "property_applications": {
+        "Background": true,
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "AAS": {
+            "caption": "Number of pages",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "number_of_pages",
+            "value": "number"
+        }
+    }
+}
