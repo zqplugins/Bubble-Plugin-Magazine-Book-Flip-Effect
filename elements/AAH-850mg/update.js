@@ -1,99 +1,95 @@
-function(instance, properties, context) {
-    
-    instance.publishState('number_of_pages', properties.data_source.length());
-    var magazinePages = properties.data_source.get(0, properties.data_source.length()) ;
-    var magazineImage = properties.image;
-    var pageID = properties.id;
+function a(instance, properties, context) {
+  instance.publishState("number_of_pages", properties.data_source.length());
+  var magazinePages = properties.data_source.get(
+    0,
+    properties.data_source.length()
+  );
+  var magazineImage = properties.image;
+  var pageID = properties.id;
 
-    
-    const magazine = document.getElementsByClassName('magazine')[0];
-    
-    for (let i = 0; i < magazinePages.length; i++) {
-     var image = magazinePages[i].get(magazineImage);
-     var id = magazinePages[i].get(pageID);
-        
-       var pageHTML = `<div style="background-image:url(${image}); background-size: 100% 100%"></div>`;
-        
-         //$('.magazine').turn('addPage', element[pageHTML,i+1])
-       magazine.innerHTML += pageHTML; 
-     
-     }
-    
-    
-    
-    
-function loadApp() {    
+  const magazine = document.getElementsByClassName("magazine")[0];
 
-    $('.magazine').turn({
-        width: properties.bubble.width(),
-        height: Math.min(properties.bubble.height(),properties.bubble.width()),
-        gradients: true,
-        acceleration: true,
-        autoCenter: true,
+  for (let i = 0; i < magazinePages.length; i++) {
+    var image = magazinePages[i].get(magazineImage);
+    var id = magazinePages[i].get(pageID);
 
-    })
+    var pageHTML = `<div style="background-image:url(${image}); background-size: 100% 100%"></div>`;
 
+    //$('.magazine').turn('addPage', element[pageHTML,i+1])
+    magazine.innerHTML += pageHTML;
+  }
 
-   
+  function loadApp() {
+    $(".magazine").turn({
+      width: properties.bubble.width(),
+      height: Math.min(properties.bubble.height(), properties.bubble.width()),
+      gradients: true,
+      acceleration: true,
+      autoCenter: true,
+    });
+    $(window)
+      .resize(function () {
+        // Ensure resizeViewport is called only after successful initialization
+        if ($(".magazine").data("turn")) {
+          // Check if 'turn' is initialized
+          console.log("Calling resizeViewport");
+          resizeViewport();
+        }
+      })
+      .bind("orientationchange", function () {
+        // Same check for orientation change
+        if ($(".magazine").data("turn")) {
+          console.log("Calling resizeViewport");
+          resizeViewport();
+        }
+      });
 
-        $(document).keydown(function(e){
+    $(document).keydown(function (e) {
+      var previous = 37,
+        next = 39,
+        esc = 27;
 
-            var previous = 37, next = 39, esc = 27;
+      switch (e.keyCode) {
+        case previous:
+          // left arrow
+          $(".magazine").turn("previous");
+          e.preventDefault();
 
-            switch (e.keyCode) {
-                case previous:
+          break;
+        case next:
+          //right arrow
+          $(".magazine").turn("next");
+          e.preventDefault();
 
-                    // left arrow
-                    $('.magazine').turn('previous');
-                    e.preventDefault();
+          break;
+        case esc:
+          $(".magazine-viewport").zoom("zoomOut");
+          e.preventDefault();
 
-                break;
-                case next:
+          break;
+      }
+    });
 
-                    //right arrow
-                    $('.magazine').turn('next');
-                    e.preventDefault();
+    //     function zoomTo(event) {
+    //
+    // 		setTimeout(function() {
+    // 			if ($('.magazine-viewport').data().regionClicked) {
+    // 				$('.magazine-viewport').data().regionClicked = false;
+    // 			} else {
+    // 				if ($('.magazine-viewport').zoom('value')==1) {
+    // 					$('.magazine-viewport').zoom('zoomIn', event);
+    // 				} else {
+    // 					$('.magazine-viewport').zoom('zoomOut');
+    // 				}
+    // 			}
+    // 		}, 1);
+    //
+    // }
+  }
 
-                break;
-                case esc:
+  loadApp();
 
-                    $('.magazine-viewport').zoom('zoomOut');	
-                    e.preventDefault();
-
-                break;
-            }
-        });
-
-        $(window).resize(function() {
-            resizeViewport();
-        }).bind('orientationchange', function() {
-            resizeViewport();
-        });
-
-    
-    function zoomTo(event) {
-
-		setTimeout(function() {
-			if ($('.magazine-viewport').data().regionClicked) {
-				$('.magazine-viewport').data().regionClicked = false;
-			} else {
-				if ($('.magazine-viewport').zoom('value')==1) {
-					$('.magazine-viewport').zoom('zoomIn', event);
-				} else {
-					$('.magazine-viewport').zoom('zoomOut');
-				}
-			}
-		}, 1);
-
-}
-}
-    
-    loadApp();
-    
-    
-
-    
-     var css = `
+  var css = `
 
 .magazine-viewport {
 	position:absolute;
@@ -159,7 +155,7 @@ function loadApp() {
 
 
 
-`
- 
- $('<style>'+ css +'</style>').appendTo('head'); 
+`;
+
+  $("<style>" + css + "</style>").appendTo("head");
 }

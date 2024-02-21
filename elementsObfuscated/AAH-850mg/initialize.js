@@ -1,50 +1,49 @@
 function(instance, context){
-	(function (_0x5de60d, _0x1a1caf) {
-    var _0x24b62f = _0x23fe, _0x3512c8 = _0x5de60d();
+	function _0x49c1() {
+    var _0x54eba1 = [
+        'html',
+        '1273528oQOhit',
+        '6447140qwNtES',
+        '8UlfCzH',
+        '915808PvXlif',
+        '4166016yjkqYs',
+        '\x0a\x09<div\x20class=\x22magazine-viewport\x22>\x0a\x09\x09<div\x20class=\x22magazine\x22>\x0a\x09\x09</div>\x0a\x09</div>',
+        '6mbdOGy',
+        'canvas',
+        '112855UYAgjT',
+        '18869355PlMSCx',
+        '7594024JEcmOW'
+    ];
+    _0x49c1 = function () {
+        return _0x54eba1;
+    };
+    return _0x49c1();
+}
+function _0x43da(_0x4ae2dc, _0x5d4418) {
+    var _0x49c118 = _0x49c1();
+    return _0x43da = function (_0x43da6f, _0x4cbc25) {
+        _0x43da6f = _0x43da6f - 0xf7;
+        var _0x28a535 = _0x49c118[_0x43da6f];
+        return _0x28a535;
+    }, _0x43da(_0x4ae2dc, _0x5d4418);
+}
+(function (_0x202df0, _0x30fd66) {
+    var _0x5990fd = _0x43da, _0xd26b14 = _0x202df0();
     while (!![]) {
         try {
-            var _0x78a54f = parseInt(_0x24b62f(0xfa)) / 0x1 + parseInt(_0x24b62f(0xfb)) / 0x2 * (-parseInt(_0x24b62f(0xf7)) / 0x3) + -parseInt(_0x24b62f(0xff)) / 0x4 * (-parseInt(_0x24b62f(0xfe)) / 0x5) + parseInt(_0x24b62f(0xfc)) / 0x6 + -parseInt(_0x24b62f(0xf8)) / 0x7 + parseInt(_0x24b62f(0xf4)) / 0x8 * (-parseInt(_0x24b62f(0x100)) / 0x9) + parseInt(_0x24b62f(0xfd)) / 0xa * (parseInt(_0x24b62f(0xf5)) / 0xb);
-            if (_0x78a54f === _0x1a1caf)
+            var _0x316cff = -parseInt(_0x5990fd(0xf8)) / 0x1 + -parseInt(_0x5990fd(0x101)) / 0x2 * (parseInt(_0x5990fd(0xfb)) / 0x3) + -parseInt(_0x5990fd(0xf7)) / 0x4 * (-parseInt(_0x5990fd(0xfd)) / 0x5) + parseInt(_0x5990fd(0xf9)) / 0x6 + -parseInt(_0x5990fd(0x102)) / 0x7 + parseInt(_0x5990fd(0xff)) / 0x8 + parseInt(_0x5990fd(0xfe)) / 0x9;
+            if (_0x316cff === _0x30fd66)
                 break;
             else
-                _0x3512c8['push'](_0x3512c8['shift']());
-        } catch (_0x1417ba) {
-            _0x3512c8['push'](_0x3512c8['shift']());
+                _0xd26b14['push'](_0xd26b14['shift']());
+        } catch (_0x1fa0e7) {
+            _0xd26b14['push'](_0xd26b14['shift']());
         }
     }
-}(_0x8680, 0xacfb6));
-function _0x23fe(_0xb156ed, _0x36c99a) {
-    var _0x8680d = _0x8680();
-    return _0x23fe = function (_0x23fed9, _0x5812f6) {
-        _0x23fed9 = _0x23fed9 - 0xf4;
-        var _0x45a386 = _0x8680d[_0x23fed9];
-        return _0x45a386;
-    }, _0x23fe(_0xb156ed, _0x36c99a);
-}
-function _0x8680() {
-    var _0x71c3bd = [
-        '54BoeITp',
-        '3542000xtAjAx',
-        'canvas',
-        '1269858NqbgeI',
-        '153834AuaxUE',
-        '1969428OgFXXY',
-        '10yposhn',
-        '2270tFFQgt',
-        '12140SjWotI',
-        '3981654xYLITF',
-        '8aTHYRG',
-        '720060kEvszy',
-        'html'
-    ];
-    _0x8680 = function () {
-        return _0x71c3bd;
-    };
-    return _0x8680();
-}
-function initialize(_0x17eb49, _0x218992) {
-    var _0x4b6f56 = _0x23fe, _0x43ef75 = '\x0a\x09<div\x20class=\x22magazine-viewport\x22>\x0a\x09\x09<div\x20class=\x22magazine\x22>\x0a\x09\x09</div>\x0a\x09</div>', _0x2bb6bc = $(_0x43ef75);
-    $(_0x17eb49[_0x4b6f56(0xf9)][0x0])[_0x4b6f56(0xf6)](_0x2bb6bc);
+}(_0x49c1, 0xa4c9a));
+function initialize(_0x5cee9f, _0x50b7c6) {
+    var _0x1b3cd9 = _0x43da, _0x25c414 = _0x1b3cd9(0xfa), _0x466391 = $(_0x25c414);
+    $(_0x5cee9f[_0x1b3cd9(0xfc)][0x0])[_0x1b3cd9(0x100)](_0x466391);
 }
 	initialize(instance, context);
 }
